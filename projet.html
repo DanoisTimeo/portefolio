@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projet</title>
+    <link rel="stylesheet" href="projet.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="Haut">
+        <div class="textbarre">
+          <div class="nom">
+            <img src="imgprofile.svg" alt="image profile">
+            <h1>Danois Timéo</h1>
+          </div>
+
+          <!----------------------------------------------------------------------------------------------------------menu burger--->
+          <div class="Dbtncontact">
+            <label for="ch" id="lab">
+
+              <a class="btncontact">menu</a>                                      <!--    je fais le bouton contact -->
+
+            </label>
+            <input type="checkbox" id="ch">
+            <nav class="menucontact">
+              <a class="er" href="index.html"><b>page principale</b></a>
+              <a href="pagecontact.html"><b>Me contacter</b></a>
+              <a href="projet.html"><b>Mes projets</b></a>
+            </nav>
+          </div>
+          <!------------------------------------------------------------------------------------------------------------------------->
+
+          <nav class="Gmenucontact">
+            <a href="index.html"><b>page principale</b></a>
+            <a href="pagecontact.html"><b>Me contacter</b></a>
+            <a href="projet.html"><b>Mes projets</b></a>
+          </nav>
+
+        </div>
+      </nav>
+    </header>
+    <!----------------------------------------------------------------corps de la page---------------------------------->
+    <div class="body2">
+      <div class="text-P">
+        <a>Mes projets<hr></a>
+      </div>
+      <div class="mesprojet">
+
+        <div class="projet1">
+          <div class="workshop">
+            <a>Le Workshop</a>
+          </div>
+          <div class="avantmodal">
+            <div class="TextavantmodalWork">
+              <p>Au début de l'année SN1 à EPSI nous avons dû faire un workshop. Nous devions en 5 jours, nous servir de ce que l'école pouvait nous donner comme équipement pour créer quelque chose pour aider les étudiants dans la vie de tous les jours.</p>
+            </div>
+            <div class="imgETplus">
+              <img src="boiteworkshop.JPG" alt="img boite workshop">
+              <div class="modal-workshop">
+                <a href="#modalworkshop">Plus <img src="plusimg.svg"></a>               <!-- le lien mène à la div à laquelle je vais donner l'id modalworkshop-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projet2">
+          <div class="projetSTI">
+            <a>Le projet compostage</a>
+          </div>
+          <div class="avantmodal">
+            <div class="imgETplus2">
+              <img src="photocomposteur1.JPG" alt="img composteur">
+              <div class="modal-workshop">
+                <a href="#modalsti2d">Plus <img src="plusimg.svg"></a>              <!-- le lien mène à la div à laquelle je vais donner l'id modalsti2d-->
+              </div>
+            </div>
+            <div class="TextavantmodalSTI">
+              <p>Saviez vous que le compost fournit énormement de chaleur, il peut monter à plus de 60 degrés. Nous pourrions utiliser cette chaleur pour une multitude de choses. C'est la mission qui m'a été donnée pendant mon année de terminal STI2D. Nous avions un projet de groupe où nous devions utiliser un compost pour réchauffer de l'eau. Nous étions trois et pendant 4h par semaines nous avons cherché une solution et construit un prototype de chauffage au compost.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------- les modal ------------------------------------------------------------------------------------------>
+    <div id="modalworkshop" class="modal">       <!-- c'est ici que je crée la div avec l'id modalworkshop que j'ai demandé si on appuie sur le "plus" du projet1 (le workshop)-->
+      <div class="contenu_modal_1">
+        <div class="body_modal_workshop">
+          <h1>Mon workshop<hr></h1>
+          <a href="#" class="fermer_modal"><img src="logoX.svg"></a>                   <!-- je crée la croix pour fermer le modal, le lien envoie vers le # car cela donne la même chose que si nous retournions sur le lien de base -->
+          <div class="text_intro_workshop">
+            <a>Dans mon groupe de 4 personnes, nous nous sommes dit que comme jeunes étudiants ayant débuté les cours depuis tout juste une semaine, un des nouveaux problèmes que nous avions eu était le fait que nos cables d'ordinateur s'emmêlaient.</a>
+          </div>
+          <div class="T2_img_conclu_workshop">
+            <div class="T2_workshop">
+              <a>Nous avons donc eu l'idée de créer une boite pour ranger les cables de chargeur. Comme l'école a une imprimante 3D, nous l'avons utilisée. Il nous a fallu apprendre seuls à modéliser la boite et à l'imprimer.</a>
+            </div>
+            <div class="img2_workshop">
+              <img src="boiteworkshop2.JPG" alt="img boite workshop">
+            </div>
+            <div class="conclu_workshop">
+              <a>Ce workshop a été une bonne expérience, cela nous a surtout appris à nous connaître. Nous avons aussi appris à utiliser l'imprimante 3D et le logiciel de modélisation.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalsti2d" class="modal">       <!-- c'est ici que je crée la div avec l'id modalsti2d que j'ai demandé si on appuie sur le "plus" du projet2 (mon projet de terminal)-->
+      <div class="contenu_modal_1">
+        <div class="body_modal_STI2D">
+          <div class="haut_modal_STI">
+            <h1>Le chauffage au compost<hr></h1>
+            <a href="#" class="fermer_modal"><img src="logoX.svg"></a>                   <!-- je crée la croix pour fermer le modal, le lien envoi vers le # car cela donne la même chose que si nous retournions sur le liens de base -->
+          </div>
+          <div class="explication_projet2">
+            <div class="clomplete_projet2">
+              <div class="text_intro_STI">
+                <a>Composter permet de recycler ses déchets verts en les mettant en tas. Grace à des micro-organismes les déchets se décomposent. Lors de la décomposition le composteur produit de l’eau, du CO2, de l’engrais de qualité, et de la chaleur. La température à l’intérieur du composteur peut monter a plus de 60°C puis quand elle redescend il faut aérer en remuant le compost, ainsi elle remonte.</a>
+              </div>
+              <div class="img_modal_STI">
+                <img src="photocomposteur2.png" alt="photo composteur avec explication">
+              </div>
+              <div class="explication_STI">
+                <a> L'eau passe d'abord dans des tuyaux. Elle arrive ensuite dans le composteur. L'eau récupère donc la chaleur du compost et continue sa course jusqu'au bac d'eau à réchauffer, à l'intérieur duquel les tuyaux donnent leur chaleur à l'eau. Ainsi le circuit d'eau se répète et l'eau dans la boite en polystyrène se réchauffe. </a>
+              </div>
+            </div>
+            <div class="partie_sin">
+              <div class="imgSIN">
+                <img src="afficheur_temperature.png" alt="afficheur temperature">
+              </div>
+              <div class="text_SIN">
+                <a>Mon travail était la partie SIN du projet, c'est à dire la partie informatique. J'ai dû programmer la rotations hebdomadaire du compost, le fonctionnement de la pompe et aussi l'affichage de la température. Nous avons mis des capteurs de température dans l'eau, dans le compost, à l'entrée et à la sortie du compost.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

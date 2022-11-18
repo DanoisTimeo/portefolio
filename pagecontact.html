@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pagecontact</title>
+        <link rel="stylesheet" href="pagecontact.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="Haut">
+                <div class="textbarre">
+                    <div class="nom">
+                        <img src="imgprofile.svg" alt="image profile">
+                        <h1>Danois Timéo</h1>
+                    </div>
+
+                    <!----------------------------------------------------------------------------------------------------------menu burger--->
+                    <div class="Dbtncontact">
+                        <label for="ch" id="lab">
+                            <a class="btncontact">menu</a>                                      <!--    je fais le bouton contact -->
+                        </label>
+                        <input type="checkbox" id="ch">
+                        <nav class="menucontact">
+                            <a class="er" href="index.html"><b>page principale</b></a>
+                            <a href="pagecontact.html"><b>Me contacter</b></a>
+                            <a href="projet.html"><b>Mes projets</b></a>
+                        </nav>
+                    </div>
+                    <!------------------------------------------------------------------------------------------------------------------------->
+                    <nav class="Gmenucontact">
+                        <a href="index.html"><b>page principale</b></a>
+                        <a href="pagecontact.html"><b>Me contacter</b></a>
+                        <a href="projet.html"><b>Mes projets</b></a>
+                    </nav>
+                </div>
+            </nav>
+        </header>
+    <!----------------------------------------------------------------corps de la page---------------------------------->
+        <div class="body2">
+            <div class="text1">
+                <a>Contactez moi ! :)</a>
+            </div>
+
+            <div class="moyendiff">
+        <!-----------------------------------------------------------le formulaire de contact ---------------------------------->
+                <div class="Toutformulaire">
+                    <div class="text-form">
+                        <b>Envoyer un message directement:</b>
+                    </div>
+
+                    <div class="imgetform">
+
+                        <div class="imgFormulaire">
+                           <img src="imgformulaire.png" alt="image join">
+                        </div>
+
+                        <div class="formulaire">
+                            <div id="after_submit"></div>
+                            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+
+                                <div class="row">
+                                    <label class="required" for="name">Votre nom:</label><br />
+                                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                                </div>
+
+                                <div class="row">
+                                    <label class="required" for="email">Votre email:</label><br />
+                                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                                </div>
+
+                                <div class="row">
+                                    <label class="required" for="message">Votre message:</label><br />
+                                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                                </div>
+
+                                <input id="submit_button" type="submit" value="envoyer l'email" />
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+    <!-------------------------------------------------------------------------------------fin formulaire-------------------------->
+    <!---------------------------------------------------------------- autres moyens ------------------------------------------------->
+
+                <div class="IMM">
+
+                    <div class="imm0">
+                        <div class="imm1">
+                            <img src="maillogo.svg">
+                        </div>
+                        <b class="immT">  | Mail: timeo.danois@epsi.fr</b>
+                    </div>
+                    <div class="imm0">
+                        <div class="imm1">
+                           <img src="telephonelogo.svg">
+                        </div>
+                        <b class="immT">  | Num: 06 31 33 46 00</b>
+                    </div>
+                    <div class="imm0">
+                        <div class="imm1">
+                            <img src="instalogo.svg">
+                        </div>
+                        <b class="immT">  | Insta: timeo_dns</b>
+                    </div>
+                    <div class="imm0">
+                        <div class="imm1">
+                            <img src="discordlogo.svg">
+                        </div>
+                        <b class="immT">  | Discord: Timéo#1653</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

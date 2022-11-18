@@ -1,0 +1,366 @@
+body{
+    margin: auto;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #e7f5ff;
+}
+nav.Haut{
+    background-color: #64ffe7;
+}
+nav.Haut > div {
+    margin: auto;
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.nom{
+    display: flex;
+}
+div.nom > h1{
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+div.nom > img{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.Dbtncontact{
+    display: none;
+}
+
+nav.Gmenucontact{
+    display: flex;
+}
+
+nav.Gmenucontact>a{
+    display: block;
+    background-color: rgba(0,196,255,0.9);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    color: black;
+    margin: 1px;
+    transition: all 0.5s ease;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none; <!--pourunliensansligne-->
+}
+
+.Gmenucontact>a:hover{
+    background-color: rgba(85,190,47,0.9);
+    color: white;
+    transition: all 0.5s ease;
+}
+@media (max-width: 1400px) {
+    nav.Haut>div {
+        width: 100%;
+    }
+    div.body2{
+        width: 100%;
+    }
+}
+@media(max-width: 1100px) {
+
+    body {
+        width: 100%;
+    }
+
+    nav.Gmenucontact {
+        display: none;
+    }
+
+    div.nom > h1 {
+        color: black;
+        font-size: 30px;
+        font-family: sans-serif;
+
+    }
+
+    /*-----------------------------------------------------------------------------------menu --------------------------------------------------------*/
+    .Dbtncontact {
+        display: flex;
+    }
+
+    a.btncontact {
+        padding: 12px 30px;
+        background: deepskyblue;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color ease 0.5s;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .btncontact:hover {
+        background: rgba(85, 190, 47);
+        color: white;
+    }
+
+    nav.menucontact {
+        width: 0;
+        display: block;
+        position: absolute;
+        right: 0;
+        transition: 0.4s;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+
+    nav.menucontact > a {
+        display: block;
+        background-color: rgba(0, 196, 255, 0.9);
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+        color: black;
+        margin: 1px;
+        transition: all 0.5s ease;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none; /* pourunliensansligne */
+    }
+
+    nav.menucontact > a:hover {
+        background-color: rgba(85, 190, 47, 0.9);
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+
+    #ch:checked + nav {
+        width: 100%;
+        transition: all 0.4s ease;
+    }
+
+    #ch {
+        display: none;
+    }
+
+    #lab {
+        margin: 4px;
+        display: block;
+    }
+}
+    /*----------------------------------------------------------------------fin menu --------------------------------------------------------------------*/
+
+div.body2{
+    width: 1400px;
+    margin: auto;
+}
+
+div.text1{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+/**************************************************************************  formulaire de contact   *****************************************************/
+div.Toutformulaire{
+    width: 600px;
+
+}
+div.text-form{
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+div.imgetform{
+
+    display: flex;
+}
+
+div.imgFormulaire > img{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius : 200px;
+}
+
+div.formulaire{
+    width: 200px;
+}
+
+#box{
+    width:955px;
+    margin:20px auto;
+    padding-top:20px;
+    font-family: serif;
+}
+#form{
+    border-radius:2px;
+    padding:20px 30px;
+    box-shadow:0 0 15px;
+    font-size:14px;
+    font-weight:bold;
+    width:200px;
+    margin:20px 250px 0 35px;
+    float:left;
+}
+h3{
+    text-align:center;
+    font-size:20px;
+}
+input{
+    width:200px;
+    height:35px;
+    margin-top:5px;
+    margin-bottom: 20px;
+    border:1px solid #999;
+    border-radius:3px;
+    padding:5px;
+}
+input[type=submit]{
+    padding: 12px 30px;
+    background: deepskyblue;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color ease 0.5s;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+input[type=submit]:hover{
+    background: rgba(85,190,47);
+    color: white;
+}
+
+textarea{
+    width:100%;
+    height:80px;
+    margin-top:5px;
+    border-radius:3px;
+    padding:5px;
+    resize:none;
+}
+span{
+    color:red
+}
+.successMessage{
+    background-color: #7acc7d;
+    border: #2b5a2d 1px solid;
+    padding: 5px 9px;
+    color: #262b26;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.errorMessage{
+    background-color: #e64141;
+    border: #da1414 1px solid;
+    padding: 5px 10px;
+    color: #fdf7f7;
+    border-radius: 4px;
+}
+.info{
+    font-size: 0.9em;
+    color: #d67262;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+
+/*-------------------------------------------------------------------------------fin formulaire ------------------------------------------------*/
+
+/*-------------------------------------------------------------- autres moyens ---------------------------------------------------------------------------------*/
+
+
+div.moyendiff{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+div.IMM{
+    margin: auto;
+}
+div.imm0{
+    display: flex;
+    background-color: rgba(0, 196, 255, 0.9);
+    padding: 20px;
+    margin: 1px;                                                    /* pour avoir un espace entre les blocs */
+    border: none;
+    border-radius: 8px;
+}
+
+div.imm1 > img{
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width: 1400px) {
+
+   div.body2{
+       width: 100%;
+   }
+
+}
+@media (max-width: 900px) {
+    div.body2{
+        display: block;
+    }
+    div.moyendiff{
+        display: block;
+        align-items: center;
+
+    }
+    div.Toutformulaire{
+        margin: auto;
+    }
+    div.IMM{
+        width: 277px;
+    }
+}
+
+@media (max-width: 640px) {
+    div.text-form{
+        margin-left: initial;
+        text-align: center;
+    }
+    .text-form > b{
+        margin: auto;
+        font-size: 100%;
+    }
+    div.text1{
+        font-size: 60%;
+    }
+    div.Toutformulaire{
+        width: 100%;
+    }
+    div.imgetform{
+        display: block;
+        font-size: 60%;
+    }
+    div.formulaire{
+        margin: auto;
+    }
+    div.imgFormulaire{
+        width: 100px;
+        margin: auto;
+    }
+    div.imgFormulaire > img{
+        width: 100px;
+        height: 100px;
+        margin-left: initial;
+
+    }
+    body{
+        font-size: 20px;
+    }
+    div.text-form{
+        font-size: 60%;
+    }
+    div.IMM{
+        font-size: 60%;
+    }
+}

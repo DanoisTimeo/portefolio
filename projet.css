@@ -1,0 +1,505 @@
+body{
+    margin: auto;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #e7f5ff;
+}
+nav.Haut{
+    background-color: #64ffe7;
+}
+nav.Haut > div {
+    margin: auto;
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.nom{
+    display: flex;
+}
+div.nom > h1{
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+div.nom > img{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.Dbtncontact{
+    display: none;
+}
+
+nav.Gmenucontact{
+    display: flex;
+}
+
+nav.Gmenucontact>a{
+    display: block;
+    background-color: rgba(0,196,255,0.9);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    color: black;
+    margin: 1px;
+    transition: all 0.5s ease;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none; <!--pourunliensansligne-->
+}
+
+.Gmenucontact>a:hover{
+    background-color: rgba(85,190,47,0.9);
+    color: white;
+    transition: all 0.5s ease;
+}
+@media (max-width: 1400px) {
+    nav.Haut>div {
+        width: 100%;
+    }
+    div.body2{
+        width: 100%;
+    }
+}
+@media(max-width: 1100px) {
+
+    body{
+        width: 100%;
+    }
+    nav.Gmenucontact{
+        display: none;
+    }
+    div.nom > h1{
+        color: black;
+        font-size: 30px;
+        font-family: sans-serif;
+
+    }
+    /*-----------------------------------------------------------------------------------menu --------------------------------------------------------*/
+    .Dbtncontact{
+        display: flex;
+    }
+    a.btncontact{
+        padding: 12px 30px;
+        background: deepskyblue;
+        border:none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color ease 0.5s;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .btncontact:hover{
+        background: rgba(85,190,47);
+        color: white;
+    }
+
+    nav.menucontact{
+        width: 0;
+        display: block;
+        position: absolute;
+        right: 0;
+        transition:  0.4s ;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+
+    nav.menucontact>a{
+        display: block;
+        background-color: rgba(0,196,255,0.9);
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+        color: black;
+        margin: 1px;
+        transition: all 0.5s ease;
+        border:none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none; /* pourunliensansligne */
+    }
+
+    nav.menucontact>a:hover{
+        background-color: rgba(85,190,47,0.9);
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+
+    #ch:checked+nav{
+        width: 100%;
+        transition: all 0.4s ease;
+    }
+    #ch{
+        display: none;
+    }
+    #lab{
+        margin: 4px;
+        display: block;
+    }
+}
+    /*----------------------------------------------------------------------fin menu --------------------------------------------------------------------*/
+
+
+
+
+    /*--------------------------------------------------------------------------------debut body2----------------------------------------------------------------*/
+
+div.body2{
+    width: 1400px;
+    margin: auto;
+}
+
+div.text-P{
+    font-size: 200%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+div.mesprojet{
+    display: flex;
+}
+/*----------------------------------------------------------------------------projet 1--------------------------------------------------------------------------*/
+div.projet1{
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    background-color: #89ffc3;
+}
+div.workshop{
+    font-size: 150%;
+    text-align: center;
+}
+
+div.avantmodal{
+    display: flex;
+}
+div.TextavantmodalWork{
+    margin-right: 15%;
+    margin-left: 2%;                      /****************************************************************************** 000*/
+    width: 50%;
+}
+div.imgETplus{
+    width: 30%;
+}
+div.imgETplus > img{
+    width: 60%;
+    height: 60%;
+}
+div.modal-workshop{
+
+}
+div.modal-workshop > a{
+    width: 55px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    margin-top: 5%;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+div.modal-workshop > a:hover{
+    background-color: #64ffe7;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------projet 2-------------------------------------------------------*/
+
+
+div.projet2{
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: 4%;                                     /***********************************A mettre a 0 quand il est en block******************************************/
+    background-color: #89ffc3;
+}
+div.projetSTI{
+    font-size: 150%;
+    text-align: center;
+}
+
+
+div.TextavantmodalSTI{
+    margin-right: 10%;
+    margin-left: 15%;
+    width: 50%;
+}
+
+
+div.imgETplus2{
+    width: 30%;
+    margin-left: 50px;
+}
+div.imgETplus2 > img{
+    width: 100%;
+    height: 60%;
+}
+
+@media (max-width: 1400px) {
+
+    div.body2{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    div.mesprojet{
+        display: initial;
+    }
+    div.projet1{
+        border: none;
+        border-radius: 8px;
+        width: 550px;
+        margin: auto;
+        background-color: #89ffc3;
+    }
+
+    div.projet2{
+        border: none;
+        border-radius: 8px;
+        width: 750px;
+        margin: auto;
+        margin-top: 5px;
+        background-color: #89ffc3;
+    }
+}
+
+@media (max-width: 750px) {
+    div.projet2{
+        width: 100%;
+    }
+}
+@media (max-width: 700px){
+    div.projet2>div{
+        display: block;
+    }
+
+
+    div.imgETplus2 > img{
+        width: 200px;
+        height: 120px;
+    }
+    div.TextavantmodalSTI{
+        margin-right: 10%;
+        margin-left: 15%;
+        width: 50%;
+    }
+
+    div.TextavantmodalSTI{
+        margin:auto;
+        width: 95%;
+    }
+
+    div.imgETplus2{
+        width: 200px;
+        margin: auto;
+    }
+}
+@media (max-width: 550px) {
+    div.projet1{
+        width: 100%;
+    }
+}
+
+
+
+/*-------------------------------------------------------------------------- Modal -------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------- Modal Workshop ----------------------------------------------------------------------------------------*/
+.modal{                                             /* cette class me sert juste à mettre une ombre derriere la modal */
+    visibility: hidden;    /*  pour cacher la modal quand on arrive sur le site*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;                                  /* les 5 lignes au precedantes sont la pour placer un background au dessus de toute la page*/
+    background: rgb(82, 137, 136, 0.5);      /*le 0.5 dans les couleur est la pour la transparence du background*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal:target{                    /* cela fonctionne un peu comme les "hover", quand on clique sur le liens plus il le remarque et donc mets le modal en visible. comme ca il s'affiche*/
+    visibility: visible;
+}
+
+div.contenu_modal_1{
+    width: 800px;
+    max-width: 90%;                 /* pour que la modal sadapte seul aux tailles d'ecrans */
+    background-color: #e7f5ff;
+    border: black;
+    border-radius: 8px;
+    position: relative;
+}
+.fermer_modal{                        /* je vais place la croix pour fermer le modal */ /* pour les deux modal*/
+    position: absolute;
+    right: 15px;
+    top: 15px;                      /* comme cela elle sera en au a droite */
+    text-decoration: none;
+}
+/*----------------------------------------------------------------------------------------------   modal projet 1 ----------------------------------------------------*/
+
+
+div.body_modal_workshop > h1{
+    text-align: center;
+}
+div.text_intro_workshop{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+div.T2_img_conclu_workshop{
+    display: flex;
+}
+div.T2_workshop{
+    width: 30%;
+    margin: auto;
+}
+div.img2_workshop{
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+}
+div.img2_workshop > img{
+    width: 60%;
+    height: 60%;
+}
+div.conclu_workshop{
+    width: 30%;
+    margin: auto;
+}
+
+
+@media (max-width: 560px) {
+    div.T2_img_conclu_workshop{
+        display: block;
+    }
+    div.T2_workshop{
+        margin-top: 15px;
+        width: 80%;
+    }
+    div.img2_workshop{
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    div.img2_workshop > img{
+        width: 60%;
+        height: 60%;
+    }
+    div.conclu_workshop{
+        width: 80%;
+    }
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------   modal projet 2 ----------------------------------------------------*/
+
+
+div.contenu_modal_1{
+    width: 800px;
+    max-width: 90%;                 /* pour que la modal sadapte seul aux tailles d'ecrans */
+    background-color: #e7f5ff;
+    border: black;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+div.haut_modal_STI{
+    text-align: center;
+}
+div.explication_projet2{
+    width: 100%;
+    font-size: 12px;
+}
+div.clomplete_projet2{
+    display: flex;
+}
+div.text_intro_STI{
+    margin: auto;
+    width: 33%;
+}
+div.img_modal_STI{
+    width: 33%;
+}
+div.img_modal_STI > img{
+    width: 250px;
+    height: 141px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+div.explication_STI{
+    width: 33%;
+    margin: auto;
+}
+
+div.partie_sin{
+    display: flex;
+    margin-top: 15px;
+}
+div.imgSIN{
+    width: 200px;
+    margin: auto;
+}
+div.text_SIN{
+    width: 300px;
+    margin: auto;
+}
+
+
+@media (max-width: 850px) {
+    div.clomplete_projet2{
+        display: block;
+    }
+    div.text_intro_STI{
+        width: 90%;
+    }
+    div.img_modal_STI{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    div.explication_STI{
+        width: 90%;
+    }
+    div.partie_sin{
+        display: block;
+    }
+    div.text_SIN{
+        width: 90%;
+    }
+}
+@media (max-width: 1250px) {
+    .modal{
+        height: 120%;
+    }
+}
+@media (max-width: 710px) {
+    .modal{
+        height: 140%;
+    }
+
+}
+

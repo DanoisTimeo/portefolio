@@ -1,0 +1,230 @@
+body{
+    margin: auto;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #e7f5ff;
+}
+nav.Haut{
+    background-color: #64ffe7;
+}
+nav.Haut > div {
+    margin: auto;
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.nom{
+    display: flex;
+}
+div.nom > h1{
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+div.nom > img{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.Dbtncontact{
+    display: none;
+}
+
+nav.Gmenucontact{
+ display: flex;
+}
+
+nav.Gmenucontact>a{
+    display: block;
+    background-color: rgba(0,196,255,0.9);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    color: black;
+    margin: 1px;
+    transition: all 0.5s ease;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none; <!--pourunliensansligne-->
+}
+
+.Gmenucontact>a:hover{
+    background-color: rgba(85,190,47,0.9);
+    color: white;
+    transition: all 0.5s ease;
+}
+@media (max-width: 1400px) {
+    nav.Haut>div {
+        width: 100%;
+    }
+}
+@media(max-width: 1100px) {
+
+    body{
+        width: 100%;
+    }
+    nav.Gmenucontact{
+        display: none;
+    }
+    div.nom > h1{
+        color: black;
+        font-size: 30px;
+        font-family: sans-serif;
+
+    }
+    /*-----------------------------------------------------------------------------------menu --------------------------------------------------------*/
+    .Dbtncontact{
+        display: flex;
+    }
+    a.btncontact{
+        padding: 12px 30px;
+        background: deepskyblue;
+        border:none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color ease 0.5s;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .btncontact:hover{
+        background: rgba(85,190,47);
+        color: white;
+    }
+
+    nav.menucontact{
+        width: 0;
+        display: block;
+        position: absolute;
+        right: 0;
+        transition:  0.4s ;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+
+    nav.menucontact>a{
+        display: block;
+        background-color: rgba(0,196,255,0.9);
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+        color: black;
+        margin: 1px;
+        transition: all 0.5s ease;
+        border:none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    nav.menucontact>a:hover{
+        background-color: rgba(85,190,47,0.9);
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+
+    #ch:checked+nav{
+        width: 100%;
+        transition: all 0.4s ease;
+    }
+    #ch{
+        display: none;
+    }
+    #lab{
+        margin: 4px;
+        display: block;
+    }
+    /*----------------------------------------------------------------------fin menu --------------------------------------------------------------------*/
+}
+
+div.body2{
+    width: 1400px;
+    margin: auto;
+}
+
+div.Presentation{
+    align-items: center;
+    justify-content: space-between;
+}
+div.IMG_TEXT{
+    display: flex;
+}
+div.photomoi{
+    margin: auto;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+div.photomoi > img{
+    width: 300px;
+    height: 343px;
+    border: none;
+    border-radius: 100%;
+}
+div.text_presentation{
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+div.nom2 > h1{
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+div.vie{
+    width: 500px;
+    text-align: center;
+}
+div.ligneBAS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.imgProgramming > img{
+    width: 400px;
+}
+div.competence{
+    font-size: 25px;
+}
+
+@media (max-width: 1400px) {
+    div.body2{
+        width: 100%;
+    }
+}
+@media (max-width: 850px) {
+    div.IMG_TEXT{
+        display: block;
+    }
+    div.photomoi{
+        display: flex;
+     }
+    div.vie{
+        width: 90%;
+        display: flex;
+        margin: auto;
+    }
+    div.ligneBAS{
+        display: block;
+    }
+    div.competence{
+        width: 200px;
+        margin: auto;
+    }
+    div.imgProgramming{
+        width: 400px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
